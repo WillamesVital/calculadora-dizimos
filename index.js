@@ -24,3 +24,20 @@ inputBruto.addEventListener("input", (e) => {
     R$${restante}
     `
 })
+
+function atualizarTexto() {
+    const brutoInput = document.getElementById('brutoInput').value;
+    document.getElementById('brutoOutput').innerText = result;
+  }
+  
+  function limparTexto() {
+    document.getElementById('brutoOutput').innerText = '';
+  }
+
+function limparCampo() {
+    document.getElementById('brutoInput').value = '';
+  }
+  
+document.getElementById('limparBotao').addEventListener('click', limparCampo);
+  
+  
